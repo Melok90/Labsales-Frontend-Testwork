@@ -1,0 +1,25 @@
+body {
+    font-family: "Gilroy";
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    .header-wrapper-menu {
+        max-width: 584px;
+        
+        display: flex;
+        justify-content: space-between;
+       .menu__list  {
+        display: flex;
+        
+        
+        
+       }
+    }
+}
