@@ -57,6 +57,9 @@ body {
             font-size: 20px;
             line-height: 24px;
             color: #212d55;
+            &:hover {
+                color: #31bef4;
+            }
         }
         .contacts-link__call {
             font-family: "Raleway", sans-serif;
@@ -66,6 +69,9 @@ body {
             line-height: 21px;
             color: #212d55;
             text-decoration: underline;
+            &:hover {
+                color: #31bef4;
+            }
         }
     }
 }
@@ -147,6 +153,9 @@ body {
                 box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
                 border-radius: 10px;
                 padding: 36px;
+                &:first-child {
+                    background-image: url("/img/cost_back_active.svg");
+                }
 
                 .cost-list__item-title {
                     font-family: "Gilroy";
@@ -154,10 +163,16 @@ body {
                     font-weight: 400;
                     font-size: 22px;
                     line-height: 26px;
-
                     color: #212d55;
+                    padding-right: 10px;
                 }
                 .cost-list__item-subtitle {
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #212d55;
                 }
                 // svg {
                 //         cursor: pointer;
@@ -174,49 +189,181 @@ body {
         }
     }
 }
+.title-text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 70px;
+    text-align: center;
+    color: #212d55;
+}
+.swiper-wrapper-title {
+    margin-top: 52px;
+}
 /////////////////////swipper////////////
-.swiper-wrapper {
-    margin-top: 90px;
-    padding-top: 40px;
-    ///
-    .swiper-item {
+///
+///
+.swiper-section {
+    background-image: url("/img/clouds.svg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    .swiper-container {
+    }
+}
+
+.swiper {
+    .swiper-wrapper {
+        margin-top: 20px;
+        padding-top: 40px;
         display: flex;
-        align-items: center;
-        width: 262px;
-        height: 139px;
-        background: #f9fcfd;
-        box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
-        border-radius: 10px;
-        .swiper-item__content {
+        gap: 30px;
+
+        .swiper-item {
             display: flex;
             align-items: center;
-            .content__image {
-                max-width: 108px;
-                width: 100%;
+            margin-bottom: 30px;
+            width: 262px;
+            height: 139px;
+            background: #f9fcfd;
+            box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+            border-radius: 10px;
+            .swiper-item__content {
+                display: flex;
+                align-items: center;
+                .content__image {
+                    max-width: 108px;
+                    width: 100%;
+                }
+            }
+        }
+        .content__text {
+            display: flex;
+            flex-wrap: wrap;
+            // align-items: center;
+
+            .content__title {
+                font-family: "Gilroy";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: #212d55;
+                margin-bottom: 15px;
+                padding-right: 25px;
+            }
+            .content__subtitle {
+                font-family: "Gilroy";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #212d55;
             }
         }
     }
-    .content__text {
-        display: flex;
-        flex-wrap: wrap;
-        // align-items: center;
-
-        .content__title {
-            font-family: "Gilroy";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 26px;
-            color: #212d55;
-            margin-bottom: 15px;
+}
+.map-navigation {
+    margin-top: 70px;
+    .map-navigation__title {
+        padding-bottom: 60px;
+    }
+    .map-wrapper {
+        .map-wrapper-location {
         }
-        .content__subtitle {
-            font-family: "Gilroy";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 27px;
-            color: #212d55;
+        .map {
+            width: 1447px;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .map-wrapper-element {
+            display: flex;
+            justify-content: flex-end;
+            .map-wrapper-location {
+                .geolocation_item__box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .map-wrapper-location__element {
+                    position: relative;
+                }
+                .geolocation_item {
+                    top: 150px;
+                    right: 700px;
+                }
+                .pool_item {
+                    top: 100px;
+                    right: 450px;
+                }
+                .store_item {
+                    top: 100px;
+                    right: 550px;
+                }
+            }
+
+            .map-wrapper-element__list {
+                margin-top: 47px;
+                margin-right: 41px;
+
+                .element__list {
+                    padding: 15px;
+                    width: 319px;
+                    height: 102px;
+                    background: #f9fcfd;
+                    box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+                    border-radius: 10px;
+                    margin-bottom: 15px;
+                    background-image: url("/img/location_map/element_list_map_bg.svg");
+
+                    .element__list_item {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        font-family: "Gilroy";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #212d55;
+                        img {
+                            margin-left: 5px;
+                        }
+                        .active_icon {
+                            display: none;
+                        }
+                        &:hover {
+                            color: #31bef4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.description-section {
+    margin-top: 80px;
+    text-align: center;
+    .description-section-cards {
+        margin-top: 49px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        gap:30px;
+        .cards-photo {
+            
+            
+            .cards-photo__bg {
+                width: 193px;
+                height: 102px;
+                background-color: #f9fcfd;
+                box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+                border-radius: 10px;
+                background-image: url('/img/cards-photo-bg.svg');
+            }
         }
     }
 }
