@@ -1,25 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
 body {
     font-family: "Gilroy";
+    font-family: "Raleway", sans-serif;
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
+.wrapper {
+    background-image: url("/img/background-img_1.svg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: top;
+    overflow: hidden;
+    height: 100%;
+}
 
-.header-wrapper {
+.menu__list {
     display: flex;
+    flex-wrap: wrap;
+    .menu__item {
+        .menu__link {
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #212d55;
+            margin-right: 35px;
+
+            &:hover {
+                color: #31bef4;
+            }
+        }
+    }
+}
+.header-wrapper {
+    padding: 27px 0px 12px 0px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    .header-wrapper-menu {
-        max-width: 584px;
-        
+    justify-content: space-between;
+
+    .contacts-link {
         display: flex;
-        justify-content: space-between;
-       .menu__list  {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+
+        .contacts-link__tel {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #212d55;
+        }
+        .contacts-link__call {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #212d55;
+            text-decoration: underline;
+        }
+    }
+}
+.navigation {
+    border: 1px solid #31bef4;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    background-image: url("/img/background-img_nav.svg");
+    background-position: center;
+}
+
+.about-us {
+    text-align: center;
+    .about-us-title {
+        margin-top: 20px;
+        padding-top: 45px;
+
+        .about-us-title__name {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 70px;
+            margin-bottom: 28px;
+            color: #212d55;
+            .title-bold {
+                font-weight: 700;
+            }
+        }
+        .about-us-title__address {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: #212d55;
+        }
+        .about-us-title__prices {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 70px;
+            color: #212d55;
+        }
+    }
+
+    .about-us-cost {
+        .btn-cost {
+            width: 325px;
+            height: 56px;
+            padding: 15px 20px;
+            border-radius: 20px;
+            box-shadow: 0px 6px 0px #2cabdc;
+            background-color: #31bef4;
+            color: #ffffff;
+            font-family: "Raleway";
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+            margin: 18px 0px 29px 0px;
+            &:hover {
+                box-shadow: 0px 4px 20px #0b91c5;
+            }
+        }
+        .cost-list {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+
+            .cost-list__item {
+                display: flex;
+                flex-wrap: wrap;
+                width: 221px;
+                height: 132px;
+                background: #f9fcfd;
+                background-image: url("/img/cost_back.svg");
+                background-position: center;
+                box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+                border-radius: 10px;
+                padding: 36px;
+
+                .cost-list__item-title {
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 26px;
+
+                    color: #212d55;
+                }
+                .cost-list__item-subtitle {
+                }
+                // svg {
+                //         cursor: pointer;
+                //     circle  {
+                //         fill: rgb(255, 255, 255);
+                //     }
+                // }
+                // svg:active {
+                //     circle  {
+                //         fill: rgb(22, 151, 173);
+                //     }
+                // }
+            }
+        }
+    }
+}
+/////////////////////swipper////////////
+.swiper-wrapper {
+    margin-top: 90px;
+    padding-top: 40px;
+    ///
+    .swiper-item {
         display: flex;
-        
-        
-        
-       }
+        align-items: center;
+        width: 262px;
+        height: 139px;
+        background: #f9fcfd;
+        box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+        border-radius: 10px;
+        .swiper-item__content {
+            display: flex;
+            align-items: center;
+            .content__image {
+                max-width: 108px;
+                width: 100%;
+            }
+        }
+    }
+    .content__text {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+
+        .content__title {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            color: #212d55;
+            margin-bottom: 15px;
+        }
+        .content__subtitle {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+            color: #212d55;
+        }
     }
 }

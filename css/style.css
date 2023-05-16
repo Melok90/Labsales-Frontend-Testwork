@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 body {
   font-family: "Gilroy";
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -7,7 +9,196 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  background-image: url("/img/background-img_1.svg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: top;
+  overflow: hidden;
+  height: 100%;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menu__list .menu__item .menu__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #212d55;
+  margin-right: 35px;
+}
+.menu__list .menu__item .menu__link:hover {
+  color: #31bef4;
+}
+
 .header-wrapper {
+  padding: 27px 0px 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-wrapper .contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.header-wrapper .contacts-link .contacts-link__tel {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212d55;
+}
+.header-wrapper .contacts-link .contacts-link__call {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #212d55;
+  text-decoration: underline;
+}
+
+.navigation {
+  border: 1px solid #31bef4;
+  padding: 30px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("/img/background-img_nav.svg");
+  background-position: center;
+}
+
+.about-us {
+  text-align: center;
+}
+.about-us .about-us-title {
+  margin-top: 20px;
+  padding-top: 45px;
+}
+.about-us .about-us-title .about-us-title__name {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 28px;
+  color: #212d55;
+}
+.about-us .about-us-title .about-us-title__name .title-bold {
+  font-weight: 700;
+}
+.about-us .about-us-title .about-us-title__address {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #212d55;
+}
+.about-us .about-us-title .about-us-title__prices {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  color: #212d55;
+}
+.about-us .about-us-cost .btn-cost {
+  width: 325px;
+  height: 56px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 0px #2cabdc;
+          box-shadow: 0px 6px 0px #2cabdc;
+  background-color: #31bef4;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 18px 0px 29px 0px;
+}
+.about-us .about-us-cost .btn-cost:hover {
+  -webkit-box-shadow: 0px 4px 20px #0b91c5;
+          box-shadow: 0px 4px 20px #0b91c5;
+}
+.about-us .about-us-cost .cost-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 36px;
+}
+.about-us .about-us-cost .cost-list .cost-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 221px;
+  height: 132px;
+  background: #f9fcfd;
+  background-image: url("/img/cost_back.svg");
+  background-position: center;
+  -webkit-box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+          box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+  padding: 36px;
+}
+.about-us .about-us-cost .cost-list .cost-list__item .cost-list__item-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #212d55;
+}
+.swiper-wrapper {
+  margin-top: 90px;
+  padding-top: 40px;
+}
+.swiper-wrapper .swiper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 262px;
+  height: 139px;
+  background: #f9fcfd;
+  -webkit-box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+          box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+}
+.swiper-wrapper .swiper-item .swiper-item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,17 +206,31 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header-wrapper .header-wrapper-menu {
-  max-width: 584px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.swiper-wrapper .swiper-item .swiper-item__content .content__image {
+  max-width: 108px;
+  width: 100%;
 }
-.header-wrapper .header-wrapper-menu .menu__list {
+.swiper-wrapper .content__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.swiper-wrapper .content__text .content__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #212d55;
+  margin-bottom: 15px;
+}
+.swiper-wrapper .content__text .content__subtitle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #212d55;
 }
