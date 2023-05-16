@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
 }
 .wrapper {
-    background-image: url("/img/background-img_1.svg");
+    background-image: url("/img/background-img_1_2.svg");
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: top;
@@ -121,6 +121,7 @@ body {
 
     .about-us-cost {
         .btn-cost {
+            cursor: pointer;
             width: 325px;
             height: 56px;
             padding: 15px 20px;
@@ -351,18 +352,269 @@ body {
         margin-top: 49px;
         margin-bottom: 60px;
         display: flex;
-        justify-content: center;
-        gap:30px;
+
+        gap: 30px;
         .cards-photo {
-            
-            
             .cards-photo__bg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 193px;
                 height: 102px;
                 background-color: #f9fcfd;
                 box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
                 border-radius: 10px;
-                background-image: url('/img/cards-photo-bg.svg');
+                background-image: url("/img/cards-photo-bg.svg");
+
+                &:last-child {
+                }
+
+                .cards-photo__bg-text {
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #212d55;
+                }
+                .cards-photo__bg-active {
+                    background-image: url("/img/cards-photo-bg_active.svg");
+                }
+                .cards_active {
+                    color: #31bef4;
+                }
+            }
+        }
+    }
+    .description-section-photo {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 60px;
+        .section-photo__left {
+            background-image: url("/img/section-photo/image_1.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 848px;
+            width: 100%;
+            padding: 140px 283px 54px 27px;
+            .section-photo__left__text {
+                width: 538px;
+                height: 378px;
+                padding: 25px 20px;
+                background: rgba(255, 255, 255, 0.85);
+                box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+                border-radius: 10px;
+
+                .section-photo-left-text-title {
+                    text-align: start;
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #212d55;
+                }
+                .section-photo-left-text-subtitle {
+                    text-align: left;
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 30px;
+                    color: #656d89;
+                }
+            }
+        }
+        .section-photo__rigth {
+            display: flex;
+            flex-direction: column;
+            img {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.footer-wrapper {
+    margin-top: 64px;
+    background-color: #f9fcfd;
+    .footer-container {
+        padding: 50px 0 100px 0;
+
+        .footer-title {
+            padding: 0px 126px 0px 126px;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            color: #212d55;
+        }
+
+        .footer-form-container {
+        }
+
+        .footer-form {
+            // margin-top: 46px;
+            display: flex;
+
+            .footer-form__call-us {
+                max-width: 371px;
+
+                .call-us {
+                    .call-us__title {
+                        margin-top: 89px;
+                        margin-bottom: 20px;
+                        font-family: "Gilroy";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #212d55;
+                    }
+                    .call-us__tel {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .call-us__tel__number {
+                            padding-bottom: 12px;
+                            a {
+                                font-family: "Gilroy";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 30px;
+                                color: #212d55;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-form-sending {
+                
+                padding-top: 106px;
+                margin-top: 46px;
+                border-left: 1px #31bef4;
+                border-style: dotted;
+                box-sizing: border-box;
+
+                .or_form_text {
+                    max-width: 114px;
+                    margin-left: 25px;
+                    text-align: center;
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #212d55;
+                }
+            }
+            .fill-form {
+                margin-left: 71px;
+                display: flex;
+                flex-direction: column;
+
+                .fill-form__title {
+                    font-family: "Gilroy";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 46px;
+                    margin-bottom: 25px;
+                    color: #31bef4;
+                    text-align: center;
+                }
+                .fill-form__fields {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 556px;
+                    .fill-form__fields__item {
+                        background-image: url("/img/field_footer_bg.svg");
+
+                        width: 267px;
+                        height: 92px;
+                        display: flex;
+                        padding-left: 25px;
+                        padding: 15px 0px 15px 30px;
+                        color: #2cabdc;
+                        font-family: "Gilroy";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #a8abb7;
+                        input[type="text"] {
+                            width: 100%;
+                            display: inline-block;
+                            border: none;
+                            height: 62px;
+                        }
+                    }
+
+                    .button_footer {
+                        padding: 0px 12px 5px 0px;
+                        .btn-footer {
+                            cursor: pointer;
+                            width: 241px;
+                            height: 56px;
+                            padding: 15px 20px;
+                            border-radius: 20px;
+                            -webkit-box-shadow: 0px 6px 0px #2cabdc;
+                            box-shadow: 0px 6px 0px #2cabdc;
+                            background-color: #31bef4;
+                            color: #ffffff;
+                            font-family: "Gilroy";
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 27px;
+                            &:hover {
+                                box-shadow: 0px 4px 20px #0b91c5;
+                            }
+                        }
+                    }
+                    .checkbox-footer {
+                        margin: 0 auto;
+                        .checkbox-footer__text {
+                            margin-top: 25px;
+                            .checkbox-footer__text-check {
+                                img {
+                                    background: #ffffff;
+                                    box-shadow: 0px 4px 13px rgba(34, 34, 34, 0.15);
+                                    border-radius: 5px;
+                                }
+                            }
+                            .checkbox_text {
+                                font-family: "Gilroy";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #212d55;
+                            }
+                            .checkbox-footer__text-link {
+                                font-family: "Gilroy";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #31bef4;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
