@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <header class="header-wrapper container">
 
@@ -30,9 +31,42 @@
                         Меню
                     </div>
                     <div class="popup__menu">
-                        <img src="./img/popup_menu.svg" alt="">
+
+                        <button id="open-popUp" class="btnMenu">
+                            <img src="./img/popup_menu.svg" alt="">
+                        </button>
                     </div>
                 </div>
+
+                <!-- /////popup//// -->
+                <div class="popUp_wrapper" id = "popUp_wrapper">
+
+                    <div class="popUp-icon">
+                        <div class="popUp-icon__image">
+                            <img src="./img/logo_pop.svg" alt="#">
+                        </div>
+                        <div class="popUp-icon__button">
+                            <button id="close-popUp">
+                                <img src="./img/button_pop.svg" alt="#">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="links-pop-Up">
+                        <a href="#">Жилые комплексы</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Как купить</a>
+                        <a href="#">Контакты</a>
+                        <div class="contacts-link_pUp">
+                            <div class="contacts-link__tel_pUp">
+                                <a href="tel:+79183774810">+7 (918) 377-48-10</a>
+                            </div>
+                            <div class="contacts-link__call_pUp">
+                                <a href="tel:+79183774810"">Заказать звонок</a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
             </div>
 
 
@@ -57,7 +91,6 @@
                 </ul>
             </nav>
             <div class="contacts-link">
-
                 <div class="contacts-link__tel">
                     <a href="tel:+79183774810">+7 (918) 377-48-10</a>
                 </div>
@@ -66,8 +99,8 @@
                 </div>
             </div>
 
-        </header>
-        <section class=" navigation">
+                    </header>
+                    <section class=" navigation">
                         <nav class="section-navigation menu-list container">
                             <ul class="menu__list">
                                 <li class="menu__item">
@@ -108,52 +141,56 @@
                                     Узнать стоимость проекта
                                 </button>
                             </div>
-                                <!-- ///swiper cost list/// -->
-                                <div class="swiper-cost-container">
-                                    <div class="swiper-cost mySwiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide cost-list">
-                                                <div class="cost-list__item">
-                                                    <div class="cost-list__item-title">
-                                                        Квартиры
-                                                    </div>
-                                                    <div class="cost-list__item-subtitle">
-                                                        от 63 801 ₽/м<sup>2</sup>
-                                                    </div>
+                            <!-- ///swiper cost list/// -->
+                            <div class="swiper-cost-container">
+                                <div class="swiper-cost mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Квартиры
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    от 63 801 ₽/м<sup>2</sup>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide cost-list">
-                                                <div class="cost-list__item">
-                                                    <div class="cost-list__item-title">
-                                                        Стоимость
-                                                    </div>
-                                                    <div class="cost-list__item-subtitle">
-                                                        от 4,44 млн ₽
-                                                    </div>
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Стоимость
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    от 4,44 млн ₽
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide cost-list"><div class="cost-list__item">
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
                                                 <div class="cost-list__item-title">
                                                     Класс
                                                 </div>
                                                 <div class="cost-list__item-subtitle">
                                                     Эконом
                                                 </div>
-                                            </div></div>
-                                            <div class="swiper-slide cost-list"><div class="cost-list__item">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
                                                 <div class="cost-list__item-title">
                                                     Срок сдачи
                                                 </div>
                                                 <div class="cost-list__item-subtitle">
                                                     Сдан
                                                 </div>
-                                            </div></div>
-
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
-                            
-                            
+                            </div>
+
+
                         </section>
                         <!-- /////swipper//// -->
                         <section class="swiper-section">
@@ -314,7 +351,13 @@
                                                     <img src="./img/location_map/our_office.svg" alt="#">
                                                 </div>
                                                 <div class="geolocation_item__box_img">
-                                                    <img src="./img/location_map/geolocation.svg" alt="">
+                                                    <img class="geo-off-icon" id="geo-off-icon"
+                                                        src="./img/location_map/geolocation.svg" alt="#"
+                                                        style="display:block;">
+                                                    <img class="geo-on-icon" id="geo-on-icon"
+                                                        class="geolocation_icon active_icon"
+                                                        src="./img/location_map/geolocation_active.svg" alt="#"
+                                                        style="display:none;">
                                                 </div>
                                             </div>
                                         </div>
@@ -335,13 +378,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="element__list">
-                                            <div class="element__list_item">
-                                                <img class="geolocation_icon" src="./img/location_map/geolocation.svg"
-                                                    alt="#">
-                                                <img class="geolocation_icon active_icon"
-                                                    src="./img/location_map/geolocation_active.svg" alt="#">
-                                                <div class="element__list_item-text">
+                                        <div class="element__list" id="map-click">
+                                            <div class="element__list_item" id="map-click">
+                                                <img class="geo-off-icon" id="geo-off-icon_2"
+                                                    src="./img/location_map/geolocation.svg" alt="#"
+                                                    style="display:block;">
+                                                <img class="geo-on-icon" id="geo-on-icon_2"
+                                                    class="geolocation_icon active_icon"
+                                                    src="./img/location_map/geolocation_active.svg" alt="#"
+                                                    style="display:none;">
+
+                                                <div class="element__list_item-text" id="text_active">
                                                     ЖК “Яблоновский”
                                                 </div>
                                             </div>
@@ -539,7 +586,6 @@
                             </div>
 
                         </footer>
-
 
                         <script src="https://api-maps.yandex.ru/1.1/index.xml"></script>
                         <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
