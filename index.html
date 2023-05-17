@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.js">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header-wrapper container">
-           
+
             <div class="header-wrapper-element">
                 <div class="logo">
                     <div class="logo__img">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-           
+
 
             <nav class="header-wrapper-menu menu-list">
                 <div class="menu__list_320px">
@@ -107,43 +107,53 @@
                                 <button class="btn-cost">
                                     Узнать стоимость проекта
                                 </button>
-                                <div class="cost-list">
-                                    <div class="cost-list__item">
-                                        <div class="cost-list__item-title">
-                                            Квартиры
-                                        </div>
-                                        <div class="cost-list__item-subtitle">
-                                            от 63 801 ₽/м<sup>2</sup>
-                                        </div>
-                                    </div>
-                                    <div class="cost-list__item">
-                                        <div class="cost-list__item-title">
-                                            Стоимость
-                                        </div>
-                                        <div class="cost-list__item-subtitle">
-                                            от 4,44 млн ₽
-                                        </div>
+                            </div>
+                                <!-- ///swiper cost list/// -->
+                                <div class="swiper-cost-container">
+                                    <div class="swiper-cost mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide cost-list">
+                                                <div class="cost-list__item">
+                                                    <div class="cost-list__item-title">
+                                                        Квартиры
+                                                    </div>
+                                                    <div class="cost-list__item-subtitle">
+                                                        от 63 801 ₽/м<sup>2</sup>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide cost-list">
+                                                <div class="cost-list__item">
+                                                    <div class="cost-list__item-title">
+                                                        Стоимость
+                                                    </div>
+                                                    <div class="cost-list__item-subtitle">
+                                                        от 4,44 млн ₽
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide cost-list"><div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Класс
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    Эконом
+                                                </div>
+                                            </div></div>
+                                            <div class="swiper-slide cost-list"><div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Срок сдачи
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    Сдан
+                                                </div>
+                                            </div></div>
 
-                                    </div>
-                                    <div class="cost-list__item">
-                                        <div class="cost-list__item-title">
-                                            Класс
-                                        </div>
-                                        <div class="cost-list__item-subtitle">
-                                            Эконом
-                                        </div>
-                                    </div>
-                                    <div class="cost-list__item">
-                                        <div class="cost-list__item-title">
-                                            Срок сдачи
-                                        </div>
-                                        <div class="cost-list__item-subtitle">
-                                            Сдан
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            
+                            
                         </section>
                         <!-- /////swipper//// -->
                         <section class="swiper-section">
@@ -274,11 +284,11 @@
                                     <div class="swiper-pagination"></div>
 
                                     <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
+                                    <!-- <div class="swiper-button-prev"></div> -->
+                                    <!-- <div class="swiper-button-next"></div> -->
 
                                     <!-- If we need scrollbar -->
-                                    <div class="swiper-scrollbar"></div>
+                                    <!-- <div class="swiper-scrollbar"></div> -->
                                 </div>
                             </div>
 
@@ -533,6 +543,8 @@
 
                         <script src="https://api-maps.yandex.ru/1.1/index.xml"></script>
                         <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+                        <script src="./jquery.min.js"></script>
+                        <script src="./swiper-bundle.min.js"></script>
                         <script src="./script.js"></script>
 
 </body>

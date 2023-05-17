@@ -1,25 +1,76 @@
 
 
-// const swiper = new Swiper('.swiper', {
-//     // Default parameters
-//     slidesPerView: 1,
-//     spaceBetween: 10,
-//     // Responsive breakpoints
-//     breakpoints: {
-//       // when window width is >= 320px
-//       320: {
-//         slidesPerView: 2,
-//         spaceBetween: 20
-//       },
-//       // when window width is >= 480px
-//       480: {
-//         slidesPerView: 3,
-//         spaceBetween: 30
-//       },
-//       // when window width is >= 640px
-//       640: {
-//         slidesPerView: 4,
-//         spaceBetween: 40
-//       }
-//     }
-//   })
+
+var swiper = new Swiper(".swiper-cost", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    loop: true,
+    freeMode: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1240: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+        },
+        1800: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+    },
+});
+
+////two swiper////
+
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    loop: true,
+    freeMode: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1240: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+        },
+        1800: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+        },
+    },
+});
+
+
