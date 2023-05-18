@@ -138,16 +138,16 @@ body {
 .header-wrapper .header-wrapper-element .popUp_wrapper {
   display: none;
   position: absolute;
-  top: 23%;
+  top: 22%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 2;
   max-width: 425px;
   width: 100%;
-  height: 402px;
+  max-height: 507px;
   background-color: #212d55;
-  padding: 10px 15px 0px 12px;
+  padding: 17px 15px 0px 12px;
 }
 .header-wrapper .header-wrapper-element .popUp_wrapper .popUp-icon {
   display: -webkit-box;
