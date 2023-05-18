@@ -264,6 +264,7 @@ body {
   color: #31bef4;
 }
 .header-wrapper .contacts-link_pUp {
+  margin-right: 16px;
   text-align: center;
 }
 .header-wrapper .contacts-link_pUp .contacts-link__tel_pUp {
