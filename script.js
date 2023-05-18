@@ -51,7 +51,7 @@ function init() {
     map.geoObjects.add(placemark_store);
     map.geoObjects.add(placemark_hospital);
     map.geoObjects.add(placemark_cafe);
-    map.controls.remove('zoomControl');
+    
     map.controls.remove('searchControl'); 
     
 }
