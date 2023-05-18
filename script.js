@@ -1,3 +1,62 @@
+/////map/////
+let center = [60.01323908006526,30.278656715488296];
+
+function init() {
+	let map = new ymaps.Map('map', {
+		center: center,
+		zoom: 15
+	});
+
+	 placemark_main = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/geolocation_full.svg',
+        iconImageSize: [180, 180],
+		iconImageOffset: [-10, -80]
+	}),
+     placemark_pool = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/pool.svg',
+        iconImageSize: [80, 80],
+		iconImageOffset: [-180, -83]
+	}),
+    placemark_fuel = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/fuel_on_map.svg',
+        iconImageSize: [80, 80],
+		iconImageOffset: [-10, +170]
+	}),
+    placemark_store = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/store_on_map.svg',
+        iconImageSize: [80, 80],
+		iconImageOffset: [-10, +10]
+	}),
+    placemark_hospital = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/hospital_on_map.svg',
+        iconImageSize: [80, 80],
+		iconImageOffset: [-150, +50]
+	}),
+    placemark_cafe = new ymaps.Placemark(center, {}, {
+		iconLayout: 'default#image',
+        iconImageHref: 'img/location_map/cafe.svg',
+        iconImageSize: [80, 80],
+		iconImageOffset: [-300, +70]
+	});
+   
+    
+	map.geoObjects.add(placemark_main);
+    map.geoObjects.add(placemark_pool);
+    map.geoObjects.add(placemark_fuel);
+    map.geoObjects.add(placemark_store);
+    map.geoObjects.add(placemark_hospital);
+    map.geoObjects.add(placemark_cafe);
+    map.controls.remove('zoomControl');
+    map.controls.remove('searchControl'); 
+    
+}
+
+ymaps.ready(init);
 
 /////swiper////
 var swiper = new Swiper(".swiper-cost", {
@@ -73,9 +132,7 @@ var swiper = new Swiper(".swiper", {
 
 const map_marker = document.getElementById('map-click');
 const active_marker = document.getElementById('geo-on-icon');
-const active_marker_2 = document.getElementById('geo-on-icon_2');
 const passive_marker = document.getElementById('geo-off-icon');
-const passive_marker_2 = document.getElementById('geo-off-icon_2');
 const text_active = document.getElementById('text_active');
 
 map_marker.onclick = function () {
@@ -88,29 +145,19 @@ map_marker.onclick = function () {
       passive_marker.style.display = "block";
       text_active.style.color = "";
     }
-  
-    if (active_marker_2.style.display === "none") {
-      active_marker_2.style.display = "block";
-      passive_marker_2.style.display = "none";
-    } else if (active_marker_2.style.display === "block") {
-      active_marker_2.style.display = "none";
-      passive_marker_2.style.display = "block";
-    }
+    
   };
 
 ////popup////
-
-// const popUp_btn = document.getElementById('open-popUp');
-
-// popUp_btn.onclick = function()  {
-//     console.log('hello')
-// }
 
 const menu_button = document.getElementById('open-popUp');
 const popup_menu = document.getElementById('popUp_wrapper');
 const menu_close_btn = document.getElementById('close-popUp');
 
+
 menu_button.onclick = function() {
+    document.body.style.overflow = 'hidden';
+    
     if (popup_menu.style.display === "none") {
         popup_menu.style.display = "block";
     } else {
@@ -120,24 +167,8 @@ menu_button.onclick = function() {
 
 menu_close_btn.onclick = function() {
     popup_menu.style.display = "none";
+    document.body.style.overflow = '';
 };
 
 
 
-
-
-
-
-
-//////////////////
-// window.addEventListener('resize', centerElement);
-
-// function centerElement() {
-//   var element = document.getElementById('myElement');
-//   element.style.top = '50%';
-//   element.style.left = '50%';
-//   element.style.transform = 'translate(-50%, -50%)';
-// }
-
-// centerElement();
-///////////////////

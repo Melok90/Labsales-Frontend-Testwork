@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -52,9 +53,9 @@
                         </div>
                     </div>
                     <div class="links-pop-Up">
-                        <a href="#">Жилые комплексы</a>
-                        <a href="#">О компании</a>
-                        <a href="#">Как купить</a>
+                        <a href="#">Жилые комплексы<span><img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
+                        <a href="#">О компании<span> <img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
+                        <a href="#">Как купить<span><img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
                         <a href="#">Контакты</a>
                         <div class="contacts-link_pUp">
                             <div class="contacts-link__tel_pUp">
@@ -337,37 +338,17 @@
                             </div>
                             <div class="map-wrapper">
 
-                                <div class="map" id="map">
-                                    <script type="text/javascript" charset="utf-8" async
-                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A15019d95a9639add793c5f52c5b48f893b53f484ef18276e5d143d8397111eca&amp;width=100%25&amp;height=663&amp;lang=ru_RU&amp;scroll=true"></script>
-
+                                <div class="map" id="map">  
                                 </div>
                                 <div class="map-wrapper-element container">
                                     <div class="map-wrapper-location">
 
-                                        <div class="map-wrapper-location__element geolocation_item">
-                                            <div class="geolocation_item__box">
-                                                <div class="geolocation_item__box_text">
-                                                    <img src="./img/location_map/our_office.svg" alt="#">
-                                                </div>
-                                                <div class="geolocation_item__box_img">
-                                                    <img class="geo-off-icon" id="geo-off-icon"
-                                                        src="./img/location_map/geolocation.svg" alt="#"
-                                                        style="display:block;">
-                                                    <img class="geo-on-icon" id="geo-on-icon"
-                                                        class="geolocation_icon active_icon"
-                                                        src="./img/location_map/geolocation_active.svg" alt="#"
-                                                        style="display:none;">
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="map-wrapper-location__element pool_item">
-                                            <img src="./img/location_map/pool.svg" alt="">
+                                            
                                         </div>
                                         <div class="map-wrapper-location__element store_item">
-                                            <img src="./img/location_map/store_on_map.svg" alt="">
+                                           
                                         </div>
-
                                     </div>
                                     <div class="map-wrapper-element__list">
                                         <div class="element__list">
@@ -380,10 +361,10 @@
                                         </div>
                                         <div class="element__list" id="map-click">
                                             <div class="element__list_item" id="map-click">
-                                                <img class="geo-off-icon" id="geo-off-icon_2"
+                                                <img class="geo-off-icon" id="geo-off-icon"
                                                     src="./img/location_map/geolocation.svg" alt="#"
                                                     style="display:block;">
-                                                <img class="geo-on-icon" id="geo-on-icon_2"
+                                                <img class="geo-on-icon" id="geo-on-icon"
                                                     class="geolocation_icon active_icon"
                                                     src="./img/location_map/geolocation_active.svg" alt="#"
                                                     style="display:none;">
@@ -587,8 +568,11 @@
 
                         </footer>
 
-                        <script src="https://api-maps.yandex.ru/1.1/index.xml"></script>
-                        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+                  
+                        <script src="https://api-maps.yandex.ru/2.1/?apikey=6ef30beb-2715-4c0a-8eff-ee14439669ef&lang=ru_RU"
+                        type="text/javascript">
+                         </script>
+                        <script src="icon_customImage.js" type="text/javascript"></script>
                         <script src="./jquery.min.js"></script>
                         <script src="./swiper-bundle.min.js"></script>
                         <script src="./script.js"></script>
