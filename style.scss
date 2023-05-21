@@ -3,6 +3,7 @@
 body {
     font-family: "Gilroy";
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -496,7 +497,7 @@ body {
         .map-wrapper-location {
         }
         .map {
-            width: 1447px;
+            width: 1440px;
             height: 700px;
             width: 100%;
             overflow: hidden;
