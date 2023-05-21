@@ -357,13 +357,13 @@ body {
         width: 221px;
         height: 132px;
         background: #f9fcfd;
-        background-image: url("/img/cost_back.svg");
+        background-image: url("../img/cost_back.svg");
         background-position: center;
         box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
         border-radius: 10px;
         padding: 36px;
         &:hover {
-            background-image: url("/img/cost_back_active.svg");
+            background-image: url("../img/cost_back_active.svg");
             background-color: #b4eaff;
         }
 
@@ -410,7 +410,7 @@ body {
 }
 
 .swiper-section {
-    background-image: url("/img/clouds.svg");
+    background-image: url("../img/clouds.svg");
     background-repeat: no-repeat;
     background-origin: content-box;
 
@@ -540,7 +540,7 @@ body {
                     box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
                     border-radius: 10px;
                     margin-bottom: 15px;
-                    background-image: url("/img/location_map/element_list_map_bg.svg");
+                    background-image: url("../img/location_map/element_list_map_bg.svg");
 
                     @media (min-width:768px) {
                         
@@ -609,7 +609,7 @@ body {
                 background-color: #f9fcfd;
                 box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
                 border-radius: 10px;
-                background-image: url("/img/cards-photo-bg.svg");
+                background-image: url("../img/cards-photo-bg.svg");
                 background-size: contain;
                 background-origin: content-box;
                 background-position: center;
@@ -628,7 +628,7 @@ body {
                     
                 }
                 .cards-photo__bg-active {
-                    background-image: url("/img/cards-photo-bg_active.svg");
+                    background-image: url("../img/cards-photo-bg_active.svg");
                 }
                 .cards_active {
                     color:#31BEF4
@@ -645,7 +645,7 @@ body {
         }
         margin-top: 60px;
         .section-photo__left {
-            background-image: url("/img/section-photo/image_1.svg");
+            background-image: url("../img/section-photo/image_1.svg");
             background-repeat: no-repeat;
             background-position: center;
             max-width: 848px;
@@ -875,7 +875,7 @@ body {
                         justify-content: space-between;
                     }
                     .fill-form__fields__item {
-                        background-image: url("/img/field_footer_bg.svg");
+                        background-image: url("../img/field_footer_bg.svg");
 
                         width: 267px;
                         height: 92px;
