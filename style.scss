@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
 }
 .wrapper {
-    background-image: url("/img/background-img_1_2.svg");
+    background-image: url("./img/background-img_1_2.svg");
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: top;
@@ -249,7 +249,7 @@ body {
     border: 1px solid #31bef4;
     padding: 30px 30px;
     box-sizing: border-box;
-    background-image: url("/img/background-img_nav.svg");
+    background-image: url("./img/background-img_nav.svg");
     background-position: center;
     @media (min-width: 960px) {
         display: block;
