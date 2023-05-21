@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.js">
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header-wrapper container">
+
+            <div class="header-wrapper-element">
+                <div class="logo">
+                    <div class="logo__img">
+                        <img src="./img/logo.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="popup">
+                    <div class="popup__text">
+                        Меню
+                    </div>
+                    <div class="popup__menu">
+
+                        <button id="open-popUp" class="btnMenu">
+                            <img src="./img/popup_menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- /////popup//// -->
+                <div class="popUp_wrapper" id = "popUp_wrapper">
+
+                    <div class="popUp-icon">
+                        <div class="popUp-icon__image">
+                            <img src="./img/logo_pop.svg" alt="#">
+                        </div>
+                        <div class="popUp-icon__button">
+                            <button id="close-popUp">
+                                <img src="./img/button_pop.svg" alt="#">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="links-pop-Up">
+                        <a href="#">Жилые комплексы<span><img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
+                        <a href="#">О компании<span> <img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
+                        <a href="#">Как купить<span><img src="./img/next (2) 1.svg" alt="" style="transform: rotate(270deg);"></span></a>
+                        <a href="#" style="margin-right: 16px;">Контакты</a>
+                        <div class="contacts-link_pUp">
+                            <div class="contacts-link__tel_pUp">
+                                <a href="tel:+79183774810">+7 (918) 377-48-10</a>
+                            </div>
+                            <div class="contacts-link__call_pUp">
+                                <a href="tel:+79183774810"">Заказать звонок</a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+
+
+            <nav class="header-wrapper-menu menu-list">
+                <div class="menu__list_320px">
+                    <p>Главная / Жилые комплексы /
+                        / Яблоновский</p>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Жилые комплексы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О компании</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Как купить</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contacts-link">
+                <div class="contacts-link__tel">
+                    <a href="tel:+79183774810">+7 (918) 377-48-10</a>
+                </div>
+                <div class="contacts-link__call">
+                    <a href="tel:+79183774810"">Заказать звонок</a>
+                </div>
+            </div>
+
+                    </header>
+                    <section class=" navigation">
+                        <nav class="section-navigation menu-list container">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#about-us" class="menu__link">Преимущества</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#map-navigation" class="menu__link">Инфраструктура</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Планировка</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Отделка</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Описание</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Контакты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Документация</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        </section>
+
+                        <section class="about-us container" id="about-us">
+                            <div class="about-us-title">
+                                <div class="about-us-title__name">Жилой Комплекс <span
+                                        class="title-bold">«Яблоновский»</span></div>
+                                <div class="about-us-title__address">Краснодар,<br> пгт. Яблоновский ул. Кобцевой</div>
+                                <div class="about-us-title__prices">от 63 801 до 65 678 ₽/м<sup>2</sup></div>
+                            </div>
+                            <div class="about-us-cost">
+                                <button class="btn-cost">
+                                    Узнать стоимость проекта
+                                </button>
+                            </div>
+                            <!-- ///swiper cost list/// -->
+                            <div class="swiper-cost-container">
+                                <div class="swiper-cost mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Квартиры
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    от 63 801 ₽/м<sup>2</sup>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Стоимость
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    от 4,44 млн ₽
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Класс
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    Эконом
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide cost-list">
+                                            <div class="cost-list__item">
+                                                <div class="cost-list__item-title">
+                                                    Срок сдачи
+                                                </div>
+                                                <div class="cost-list__item-subtitle">
+                                                    Сдан
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </section>
+                        <!-- /////swipper//// -->
+                        <section class="swiper-section">
+                            <div class="swiper-wrapper-title title-text">
+                                О комплексе
+                            </div>
+                            <div class="swiper-container container">
+
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/key_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Срок сдачи</div>
+                                                        <div class="content__subtitle">
+                                                            2015
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/corps_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Корпусов</div>
+                                                        <div class="content__subtitle">
+                                                            2 корпуса
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/floor_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Этажность</div>
+                                                        <div class="content__subtitle">
+                                                            10
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/parking_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Парковка</div>
+                                                        <div class="content__subtitle">
+                                                            Гостевая
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/house_type_icon.svg" alt="#">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Тип дома</div>
+                                                        <div class="content__subtitle">
+                                                            Кирпичный
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/children_playground_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Территория</div>
+                                                        <div class="content__subtitle">
+                                                            Дет.площадки
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/class_house_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Класс дома</div>
+                                                        <div class="content__subtitle">
+                                                            Эконом
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-item">
+                                                <div class="swiper-item__content">
+                                                    <div class="content__image">
+                                                        <img src="./img/finishing_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="content__text">
+                                                        <div class="content__title">Отделка</div>
+                                                        <div class="content__subtitle">
+                                                            Чистовая
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <!-- <div class="swiper-button-prev"></div> -->
+                                    <!-- <div class="swiper-button-next"></div> -->
+
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            </div>
+
+                        </section>
+                        <!-- ////////map//// -->
+                        <section class="map-navigation" id="map-navigation">
+                            <div class="map-navigation__title title-text">
+                                Наша инфраструктура
+                            </div>
+                            <div class="map-wrapper">
+
+                                <div class="map" id="map">  
+                                </div>
+                                <div class="map-wrapper-element container">
+                                    <div class="map-wrapper-location">
+
+                                        <div class="map-wrapper-location__element pool_item">
+                                            
+                                        </div>
+                                        <div class="map-wrapper-location__element store_item">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="map-wrapper-element__list">
+                                        <div class="element__list">
+                                            <div class="element__list_item">
+                                                <img src="./img/location_map/store.svg" alt="">
+                                                <div class="element__list_item-text">
+                                                    Магазины
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element__list" id="map-click">
+                                            <div class="element__list_item" id="map-click">
+                                                <img class="geo-off-icon" id="geo-off-icon"
+                                                    src="./img/location_map/geolocation.svg" alt="#"
+                                                    style="display:block;">
+                                                <img class="geo-on-icon" id="geo-on-icon"
+                                                    class="geolocation_icon active_icon"
+                                                    src="./img/location_map/geolocation_active.svg" alt="#"
+                                                    style="display:none;">
+
+                                                <div class="element__list_item-text" id="text_active">
+                                                    ЖК “Яблоновский”
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element__list">
+                                            <div class="element__list_item">
+                                                <img class="geolocation_icon" src="./img/location_map/kid.svg" alt="#">
+
+                                                <div class="element__list_item-text">
+                                                    Детский сад
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element__list">
+                                            <div class="element__list_item">
+                                                <img class="geolocation_icon" src="./img/location_map/fuel.svg" alt="#">
+
+                                                <div class="element__list_item-text">
+                                                    АЗС
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element__list">
+                                            <div class="element__list_item">
+                                                <img class="geolocation_icon" src="./img/location_map/hospital.svg"
+                                                    alt="#">
+
+                                                <div class="element__list_item-text">
+                                                    Поликлинника
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <!-- ///////////description////// -->
+                        <section class="description-section container">
+                            <div class="description-section__title title-text">
+                                Описание Жилого Комплекса
+                            </div>
+                            <div class="description-section__subtitle">
+                                Нажимайте <span><img src="./img/next (2) 1.svg" alt=""></span><span><img
+                                        src="./img/next (2) 2.svg" alt="#"></span>&nbspчтобы подробно ознакомится с
+                                проектом
+                            </div>
+
+                            <div class="description-section-cards">
+                                <div class="cards-photo">
+                                    <div class="cards-photo__bg">
+                                        <p class="cards-photo__bg-text">
+                                            Парковка
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="cards-photo">
+                                    <div class="cards-photo__bg">
+                                        <p class="cards-photo__bg-text">
+                                            Архитектура
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cards-photo">
+                                    <div class="cards-photo__bg">
+                                        <p class="cards-photo__bg-text">
+                                            Охрана
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cards-photo">
+                                    <div class="cards-photo__bg">
+                                        <p class="cards-photo__bg-text cards_active">
+                                            Территория
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="description-section-photo">
+                                <div class="section-photo__left">
+                                    <div class="section-photo__left__text">
+                                        <div class="section-photo-left-text-title">
+                                            Территория
+                                        </div>
+                                        <div class="section-photo-left-text-subtitle">
+                                            Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в пгт.
+                                            Яблоновский. За пять минут пешком можно дойти до муниципальной поликлиники,
+                                            школы и детского садика.<br><br>
+                                            Этот жилой комплекс располагается в непосредственной близости от улицы
+                                            Гагарина, где проходит абсолютное большинство маршрутов общественного
+                                            транспорта, соответственно легко добраться во все части поселка и города
+                                            Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ,
+                                            овощной рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="section-photo__img">
+
+                                    </div>
+                                </div>
+                                <div class="section-photo__rigth">
+                                    <img src="./img/section-photo/image_2.svg" alt="">
+                                    <img src="./img/section-photo/image_3.svg" alt="">
+                                    <img src="./img/section-photo/image_4.svg" alt="">
+
+                                </div>
+
+                            </div>
+
+                        </section>
+                        <!-- ///////////footer///// -->
+
+                        <footer class="footer-wrapper">
+                            <div class="footer-container container">
+                                <div class="footer-title">
+                                    Узнайте о выгодных предложениях и получите личную консультацию
+                                </div>
+                                <div class="fill-form__title-box">
+                                    <div class="fill-form__title">
+                                        <span><img src="./img/point_1.svg" alt=""></span> Сейчас мы работаем
+                                    </div>
+                                </div>
+
+                                <div class="footer-form-container">
+                                    <div class="footer-form">
+
+                                        <div class="footer-form__call-us">
+                                            <div class="call-us">
+                                                <div class="call-us__title">
+                                                    По любым возникающим Вами вопросов звоните нам напрямую
+                                                </div>
+                                                <div class="call-us__tel">
+                                                    <div class="call-us__tel__img">
+                                                        <img src="./img/tel_icon.svg" alt="">
+                                                    </div>
+                                                    <div class="call-us__tel__number">
+                                                        <a href="tel:+79183774810">+7 (918) 377-48-10</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="footer-form-sending">
+                                            <div class="or_form_text">
+                                                Или заполните форму
+                                            </div>
+
+                                        </div>
+                                        <div class="fill-form">
+
+                                            <div class="fill-form__fields">
+                                                <div class="fill-form__fields__item">
+                                                    <input type="text" placeholder="Ваше имя" name="name">
+                                                </div>
+                                                <div class="fill-form__fields__item">
+                                                    <input type="tel" placeholder="Ваш номер телефона" name="number"
+                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                                </div>
+                                                <div class="fill-form__fields__item">
+                                                    <input type="text" placeholder="Ваш email" name="email">
+                                                </div>
+                                                <div class="fields__button-footer">
+                                                    <div class="button_footer">
+                                                        <button class="btn-footer">
+                                                            Отправить заявку
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-footer">
+
+                                                    <div class="checkbox-footer__text">
+                                                        <form class="checkbox-footer__text-check">
+                                                            <input id="html" type="checkbox">
+                                                            <label for="html"><span><img src="./img/checkbox.svg"
+                                                                        alt=""></span></label>
+                                                            <span class="checkbox_text">Я принимаю
+                                                                условия&nbsp;</span><a href="#"
+                                                                class="checkbox-footer__text-link">обработки
+                                                                персональных данных</a>
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </footer>
+
+                  
+                        <script src="https://api-maps.yandex.ru/2.1/?apikey=6ef30beb-2715-4c0a-8eff-ee14439669ef&lang=ru_RU"
+                        type="text/javascript">
+                         </script>
+                        <script src="icon_customImage.js" type="text/javascript"></script>
+                        <script src="./jquery.min.js"></script>
+                        <script src="./swiper-bundle.min.js"></script>
+                        <script src="./script.js"></script>
+
+</body>
+
+</html>
